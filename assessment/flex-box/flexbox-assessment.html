@@ -19,6 +19,9 @@
     .container {
 
       background-color: #d90;
+      width: 100%;
+    flex:1;
+
     }
 
     .leftbar,
@@ -41,11 +44,22 @@
 
     /* Your code starts here */
     /* CODE AREA */
-    .container {}
+    .container {
+display: flex;
 
-    .content {}
+    }
 
-    .leftbar {}
+    .content {order: 2;
+      flex-grow: 2;}
+
+    .leftbar {order:1;
+
+  flex-grow: 1;}
+
+    .rightbar {
+      order:3;
+      flex-grow: 1;
+}
 
     /* END CODE AREA */
   </style>
